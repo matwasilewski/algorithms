@@ -14,7 +14,7 @@ class QuickSort:
     def verify(self, arr):
         return arr == self.arr_sorted
 
-    def print_report(self, arr):
+    def print_report(self):
             print(self.arr_copy)
             print(self.arr)
             print(self.arr_sorted)
