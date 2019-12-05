@@ -12,7 +12,7 @@ class InsertionSort:
         while i < len(arr):
             j = i
             while j > 0 and arr[j] < arr[j-1]:
-                self.swap(self.arr, j, j-1)
+                self.swap(arr, j, j-1)
                 j -= 1
             i += 1
 
