@@ -9,7 +9,15 @@ def random_seed():
     return 42
 
 
-def unsorted_array(to_power: int = 2, random_seed: int = random_seed):
+@pytest.fixture
+def sorted_array(to_power: int):
+    assert to_power >= 2
+    size = int(math.pow(2, to_power))
+    array = [i for i in range(size)]
+    return array
+
+
+def unsorted_array(to_power: int, random_seed: int = random_seed):
     assert to_power >= 2
     size = int(math.pow(2, to_power))
 
