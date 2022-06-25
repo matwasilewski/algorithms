@@ -86,21 +86,21 @@ def test_bubble_sort_12(arr_power_12, arr_power_12_sorted, bubbleSort):
     assert arr_sorted == arr_power_12_sorted
 
 
-@pytest.skip
+@pytest.mark.skip
 def test_bubble_sort_13(arr_power_13, arr_power_13_sorted, bubbleSort):
     arr_sorted, time_elapsed = bubbleSort.sort_and_time(arr_power_13)
     statistics[len(arr_sorted)] = time_elapsed
     assert arr_sorted == arr_power_13_sorted
 
 
-@pytest.skip
+@pytest.mark.skip
 def test_bubble_sort_14(arr_power_14, arr_power_14_sorted, bubbleSort):
     arr_sorted, time_elapsed = bubbleSort.sort_and_time(arr_power_14)
     statistics[len(arr_sorted)] = time_elapsed
     assert arr_sorted == arr_power_14_sorted
 
 
-@pytest.skip
+@pytest.mark.skip
 def test_bubble_sort_15(arr_power_15, arr_power_15_sorted, bubbleSort):
     arr_sorted, time_elapsed = bubbleSort.sort_and_time(arr_power_15)
     statistics[len(arr_sorted)] = time_elapsed
