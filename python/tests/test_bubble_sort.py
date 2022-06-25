@@ -55,3 +55,28 @@ def test_bubble_sort_9(arr_power_9, arr_power_9_sorted, bubbleSort):
 def test_bubble_sort_10(arr_power_10, arr_power_10_sorted, bubbleSort):
     arr_sorted = bubbleSort.sort(arr_power_10)
     assert arr_sorted == arr_power_10_sorted
+
+
+def test_bubble_sort_11(arr_power_11, arr_power_11_sorted, bubbleSort):
+    arr_sorted = bubbleSort.sort(arr_power_11)
+    assert arr_sorted == arr_power_11_sorted
+
+
+def test_bubble_sort_12(arr_power_12, arr_power_12_sorted, bubbleSort):
+    arr_sorted = bubbleSort.sort(arr_power_12)
+    assert arr_sorted == arr_power_12_sorted
+
+
+def test_bubble_sort_13(arr_power_13, arr_power_13_sorted, bubbleSort):
+    arr_sorted = bubbleSort.sort(arr_power_13)
+    assert arr_sorted == arr_power_13_sorted
+
+
+def test_bubble_sort_14(arr_power_14, arr_power_14_sorted, bubbleSort):
+    arr_sorted = bubbleSort.sort(arr_power_14)
+    assert arr_sorted == arr_power_14_sorted
+
+
+def test_bubble_sort_15(arr_power_15, arr_power_15_sorted, bubbleSort):
+    arr_sorted = bubbleSort.sort(arr_power_15)
+    assert arr_sorted == arr_power_15_sorted
