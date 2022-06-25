@@ -1,17 +1,10 @@
 import random
 import math
 import pytest
+import timeit
 
-from conftest import random_seed
-
-
-def unsorted_array(to_power: int = 2, random_seed: int = random_seed):
-    assert to_power >= 2
-    size = int(math.pow(2, to_power))
-
-    random.seed(random_seed)
-    array = [random.randint(0, size) for _ in range(size)]
-    return array
+from conftest import unsorted_array
+from sort.BubbleSort import BubbleSort
 
 
 def test_generator():
@@ -21,3 +14,8 @@ def test_generator():
 
     assert arr1 == arr2
     assert arr1 == arr3
+
+
+def test_bubble_sort(arr_power_2, arr_power_2_sorted):
+    arr_sorted = BubbleSort.sort(arr_power_2)
+    assert arr_sorted == arr_power_2_sorted
