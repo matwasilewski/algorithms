@@ -11,7 +11,9 @@ class AbstractSort(ABC):
         te = time.time()
         t = te - ts
 
-        log.info(f"{self.__class__.__name__} (N: {len(iterable)}) {t} sec")
+        log.info(
+            f"Sort: {self.__class__.__name__} (N: {len(iterable)}) {t} sec"
+        )
 
         return result, t
 

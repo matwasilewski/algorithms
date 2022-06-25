@@ -3,6 +3,7 @@ from copy import copy
 from InsertionSort import InsertionSort
 from math import ceil
 
+
 class BucketSort:
     def __init__(self, arr, min, max, size):
         self.arr = arr
