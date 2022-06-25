@@ -116,11 +116,71 @@ def arr_power_9_sorted(arr_power_9):
 
 @pytest.fixture(scope="session")
 def arr_power_10():
-    arr = unsorted_array(to_power=9)
+    arr = unsorted_array(to_power=10)
     yield arr
 
 
 @pytest.fixture(scope="session")
 def arr_power_10_sorted(arr_power_10):
     sorted_arr = sorted(arr_power_10)
+    yield sorted_arr
+
+
+@pytest.fixture(scope="session")
+def arr_power_11():
+    arr = unsorted_array(to_power=11)
+    yield arr
+
+
+@pytest.fixture(scope="session")
+def arr_power_11_sorted(arr_power_11):
+    sorted_arr = sorted(arr_power_11)
+    yield sorted_arr
+
+
+@pytest.fixture(scope="session")
+def arr_power_12():
+    arr = unsorted_array(to_power=12)
+    yield arr
+
+
+@pytest.fixture(scope="session")
+def arr_power_12_sorted(arr_power_12):
+    sorted_arr = sorted(arr_power_12)
+    yield sorted_arr
+
+
+@pytest.fixture(scope="session")
+def arr_power_13():
+    arr = unsorted_array(to_power=13)
+    yield arr
+
+
+@pytest.fixture(scope="session")
+def arr_power_13_sorted(arr_power_13):
+    sorted_arr = sorted(arr_power_13)
+    yield sorted_arr
+
+
+@pytest.fixture(scope="session")
+def arr_power_14():
+    arr = unsorted_array(to_power=14)
+    yield arr
+
+
+@pytest.fixture(scope="session")
+def arr_power_14_sorted(arr_power_14):
+    sorted_arr = sorted(arr_power_14)
+    yield sorted_arr
+
+
+@pytest.fixture(scope="session")
+def arr_power_15():
+    arr = unsorted_array(to_power=15)
+    yield arr
+
+
+@pytest.fixture(scope="session")
+def arr_power_15_sorted(arr_power_15):
+    sorted_arr = sorted(arr_power_15)
     yield sorted_arr
