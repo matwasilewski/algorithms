@@ -4,5 +4,5 @@ import pytest
 
 
 @pytest.fixture(scope="session")
-def random_generator():
-    return random.seed(42)
+def random_seed():
+    return 42
